@@ -1,6 +1,6 @@
 ---
-- include:              '../tasks/dependencies.yml'
-- include:              '../tasks/template_files.yml'
+- include_tasks:        '../tasks/dependencies.yml'
+- include_tasks:        '../tasks/template_files.yml'
 - assert:
     that:               True
     quiet:              True
