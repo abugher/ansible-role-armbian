@@ -1,5 +1,4 @@
-dependencies:
-  - 'debian'
+---
 source_url:                     'http://apt.armbian.com'
 source_suite:                   "{{ os_release_name }}"
 source_components:
