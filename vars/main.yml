@@ -5,6 +5,12 @@ source_components:
   - 'main'
   - "{{ os_release_name }}-utils"
   - "{{ os_release_name }}-desktop"
+install_files:
+  - owner:                      'root'
+    group:                      'root'
+    mode:                       '0644'
+    src:                        'files/conf/armbian.key'
+    dest:                       '/etc/apt/trusted.gpg.d/armbian.asc'
 template_files:
   - owner:                      'root'
     group:                      'root'
