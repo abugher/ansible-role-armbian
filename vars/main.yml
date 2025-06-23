@@ -9,8 +9,13 @@ remove_files:
   - owner:                      'root'
     group:                      'root'
     mode:                       '0644'
-    src:                        'files/conf/armbian.key'
     dest:                       '/etc/apt/trusted.gpg.d/armbian.asc'
+install_files:
+  - owner:                      'root'
+    group:                      'root'
+    mode:                       '0644'
+    src:                        'files/conf/armbian.key'
+    dest:                       '/usr/share/keyrings/armbian.asc'
 template_files:
   - owner:                      'root'
     group:                      'root'
