@@ -6,6 +6,8 @@ source_components:
   - 'main'
   - "{{ os_release_name }}-utils"
   - "{{ os_release_name }}-desktop"
+# Armbian, unlike debian, does not control this file with a package, but it
+# should come with the OS image.
 keyring_file:                   '/usr/share/keyrings/armbian-archive-keyring.gpg'
 remove_files:
   - '/etc/sources.list.d/armbian.sources'
